@@ -4,6 +4,13 @@ import { FiChevronRight } from 'react-icons/fi'
 import { menuCategories } from '../data/menu'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
+const WHATSAPP_NUMBER = '6281234567890'
+
+function getWhatsAppUrl(itemName) {
+  const message = `Hello Brew & Bean, I would like to order ${itemName}.`
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+}
+
 export default function FeaturedMenu() {
   const [activeCategory, setActiveCategory] = useState(menuCategories[0].id)
   const [ref, isVisible] = useScrollReveal()
@@ -83,9 +90,14 @@ export default function FeaturedMenu() {
                   <p className="text-brown-500 text-sm font-inter leading-relaxed line-clamp-2">
                     {item.description}
                   </p>
-                  <div className="mt-4 flex items-center text-gold text-sm font-inter font-medium group-hover:gap-2 transition-all duration-300">
+                  <a
+                    href={getWhatsAppUrl(item.name)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center text-gold text-sm font-inter font-medium group-hover:gap-2 transition-all duration-300 hover:text-gold-light"
+                  >
                     Order Now <FiChevronRight className="ml-1 group-hover:ml-2 transition-all" />
-                  </div>
+                  </a>
                 </div>
               </motion.div>
             ))}
