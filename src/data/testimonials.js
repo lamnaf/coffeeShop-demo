@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Sarah Johnson',
+    role: 'Regular Customer',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
+    rating: 5,
+    text: 'This is my absolute favorite coffee spot. The Signature Espresso is perfection, and the cozy ambience makes it the perfect place to work or catch up with friends.',
+  },
+  {
+    id: 2,
+    name: 'Michael Chen',
+    role: 'Coffee Enthusiast',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+    rating: 5,
+    text: 'The Nitro Cold Brew is simply outstanding. You can taste the care and expertise in every cup. A true haven for coffee lovers in the city.',
+  },
+  {
+    id: 3,
+    name: 'Emily Rodriguez',
+    role: 'Food Blogger',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+    rating: 5,
+    text: 'Their Tiramisu is divine — perfectly balanced and incredibly authentic. Paired with a Cappuccino, it is the ultimate afternoon treat.',
+  },
+  {
+    id: 4,
+    name: 'David Park',
+    role: 'Remote Worker',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+    rating: 4,
+    text: 'Great wifi, amazing coffee, and a warm atmosphere. My go-to spot for getting work done. The staff are always friendly and welcoming.',
+  },
+  {
+    id: 5,
+    name: 'Lisa Thompson',
+    role: 'Dessert Lover',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop',
+    rating: 5,
+    text: 'The Cheesecake is to die for! Creamy, rich, and the perfect companion to their Matcha Latte. This place is a hidden gem.',
+  },
+]
